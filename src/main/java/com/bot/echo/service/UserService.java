@@ -8,4 +8,8 @@ public interface UserService {
     void changeState(User user, String chatState);
 
     Boolean checkState(User user, String message);
+
+    User findByChatId(Long userChatId);
+
+    void save(User user);
 }
